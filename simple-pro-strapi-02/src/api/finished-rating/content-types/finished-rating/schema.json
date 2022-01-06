@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finished_ratings",
+  "info": {
+    "singularName": "finished-rating",
+    "pluralName": "finished-ratings",
+    "displayName": "FinishedRating",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "progress_rating": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::progress-rating.progress-rating"
+    },
+    "pm_rating": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pm-rating.pm-rating"
+    },
+    "requests_step_progress": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::requests-step-progress.requests-step-progress",
+      "inversedBy": "finished_rating"
+    }
+  }
+}

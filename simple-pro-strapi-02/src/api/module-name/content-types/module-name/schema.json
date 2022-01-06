@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "module_names",
+  "info": {
+    "singularName": "module-name",
+    "pluralName": "module-names",
+    "displayName": "ModuleName"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "ModuleCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ModuleDescription": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    },
+    "module_step_matrices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::module-step-matrix.module-step-matrix",
+      "mappedBy": "module_name"
+    }
+  }
+}

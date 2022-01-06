@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests_step_progresses",
+  "info": {
+    "singularName": "requests-step-progress",
+    "pluralName": "requests-step-progresses",
+    "displayName": "RequestsStepProgress"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "IsCursorHere": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "request": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::request.request",
+      "inversedBy": "requests_step_progresses"
+    },
+    "step_progress": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::step-progress.step-progress"
+    },
+    "creator_users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "finished_rating": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::finished-rating.finished-rating",
+      "inversedBy": "requests_step_progress"
+    },
+    "vendor_selection": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::vendor-selection.vendor-selection",
+      "inversedBy": "requests_step_progress"
+    },
+    "pm_findings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pm-finding.pm-finding",
+      "mappedBy": "requests_step_progress"
+    },
+    "document_reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::document-review.document-review",
+      "mappedBy": "requests_step_progress"
+    }
+  }
+}

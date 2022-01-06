@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "module_step_matrices",
+  "info": {
+    "singularName": "module-step-matrix",
+    "pluralName": "module-step-matrices",
+    "displayName": "ModuleStepMatrix"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "module_name": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::module-name.module-name",
+      "inversedBy": "module_step_matrices"
+    },
+    "step_progress": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::step-progress.step-progress",
+      "inversedBy": "module_step_matrices"
+    }
+  }
+}

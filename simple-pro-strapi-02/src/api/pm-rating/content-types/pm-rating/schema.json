@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pm_ratings",
+  "info": {
+    "singularName": "pm-rating",
+    "pluralName": "pm-ratings",
+    "displayName": "PMRating"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RatingNo": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "RatingName": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    },
+    "IsArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

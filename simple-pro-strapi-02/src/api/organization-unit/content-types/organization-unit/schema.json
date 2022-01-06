@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organization_units",
+  "info": {
+    "singularName": "organization-unit",
+    "pluralName": "organization-units",
+    "displayName": "OrganizationUnit"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UnitName": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    },
+    "OrganizationUnitCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "organization_unit"
+    }
+  }
+}

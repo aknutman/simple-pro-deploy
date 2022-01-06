@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "step_progresses",
+  "info": {
+    "singularName": "step-progress",
+    "pluralName": "step-progresses",
+    "displayName": "StepProgress"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StepNameCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    },
+    "IsArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "StepName": {
+      "type": "string",
+      "required": true
+    },
+    "module_step_matrices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::module-step-matrix.module-step-matrix",
+      "mappedBy": "step_progress"
+    }
+  }
+}

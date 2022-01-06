@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "request_types",
+  "info": {
+    "singularName": "request-type",
+    "pluralName": "request-types",
+    "displayName": "RequestType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TypeNameCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "TypeName": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    },
+    "MaximumContractBudget": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

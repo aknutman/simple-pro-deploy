@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reject_reasons",
+  "info": {
+    "singularName": "reject-reason",
+    "pluralName": "reject-reasons",
+    "displayName": "RejectReason"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ReasonName": {
+      "type": "string",
+      "required": true
+    },
+    "RejectCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "IsArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

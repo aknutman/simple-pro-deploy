@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attachment_types",
+  "info": {
+    "singularName": "attachment-type",
+    "pluralName": "attachment-types",
+    "displayName": "AttachmentType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AttachmentNameCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    },
+    "IsArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "AttachmentName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

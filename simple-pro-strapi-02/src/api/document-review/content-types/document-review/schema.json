@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "document_reviews",
+  "info": {
+    "singularName": "document-review",
+    "pluralName": "document-reviews",
+    "displayName": "DocumentReview",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "IsArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "requests_step_progress": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::requests-step-progress.requests-step-progress",
+      "inversedBy": "document_reviews"
+    },
+    "review_status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::review-status.review-status"
+    },
+    "ReviewNotes": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    }
+  }
+}

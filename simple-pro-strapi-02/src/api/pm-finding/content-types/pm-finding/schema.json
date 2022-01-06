@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pm_findings",
+  "info": {
+    "singularName": "pm-finding",
+    "pluralName": "pm-findings",
+    "displayName": "PMFindings",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RejectNote": {
+      "type": "richtext",
+      "required": false
+    },
+    "UserAcceptAt": {
+      "type": "datetime",
+      "required": false
+    },
+    "IsArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "requests_step_progress": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::requests-step-progress.requests-step-progress",
+      "inversedBy": "pm_findings"
+    },
+    "reject_reason": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reject-reason.reject-reason"
+    }
+  }
+}

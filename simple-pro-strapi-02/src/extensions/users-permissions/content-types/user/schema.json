@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "up_users",
+  "info": {
+    "name": "user",
+    "description": "",
+    "singularName": "user",
+    "pluralName": "users",
+    "displayName": "User"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.role",
+      "inversedBy": "users",
+      "configurable": false
+    },
+    "user_group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::user-group.user-group",
+      "inversedBy": "users"
+    },
+    "organization_unit": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::organization-unit.organization-unit",
+      "inversedBy": "users"
+    },
+    "IsFunctional": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "FullName": {
+      "type": "string",
+      "required": true
+    },
+    "NIP": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "SKNo": {
+      "type": "string"
+    },
+    "SKDate": {
+      "type": "date"
+    },
+    "SKFile": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

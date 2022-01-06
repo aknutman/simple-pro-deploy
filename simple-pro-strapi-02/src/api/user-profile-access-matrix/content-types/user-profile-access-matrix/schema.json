@@ -1,0 +1,157 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_profile_access_matrices",
+  "info": {
+    "singularName": "user-profile-access-matrix",
+    "pluralName": "user-profile-access-matrices",
+    "displayName": "UserProfileAccessMatrix",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UKPBBJ_List_All": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "UKPBBJ_List_Related": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "UKPBJ_List_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "UKPBBJ_Detail_Create": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "UKPBBJ_Detail_Read": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "UKPBBJ_Detail_Update": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "UKPBBJ_Detail_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "UKPBJ_Detail_Password_Changes": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "UKPBJ_Detail_Password_Reset": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_List_All": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_List_Related": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_List_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_Detail_Create": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_Detail_Read": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_Detail_Update": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_Detail_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_Detail_Password_Changes": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PPK_Detail_Password_Reset": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_List_All": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_List_Related": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_List_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_Detail_Create": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_Detail_Read": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_Detail_Update": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_Detail_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_Detail_Password_Reset": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PP_Detail_Password_Changes": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "user_group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-group.user-group",
+      "inversedBy": "user_profile_access_matrix"
+    }
+  }
+}

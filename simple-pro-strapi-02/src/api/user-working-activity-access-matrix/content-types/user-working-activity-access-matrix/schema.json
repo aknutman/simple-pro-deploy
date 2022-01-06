@@ -1,0 +1,171 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_working_activity_access_matrices",
+  "info": {
+    "singularName": "user-working-activity-access-matrix",
+    "pluralName": "user-working-activity-access-matrices",
+    "displayName": "UserWorkingActivityAccessMatrix",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-group.user-group",
+      "inversedBy": "user_working_activity_access_matrix"
+    },
+    "Request_List_All": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Request_List_Related": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Request_Detail_Create": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Request_Detail_Read": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Request_Detail_Update": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Request_Detail_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Progress_List_All": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Progress_List_Related": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Progress_Detail_Read": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Progress_Detail_Update": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Progress_Detail_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Appraisal_List_All": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Appraisal_List_Related": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Appraisal_Detail_Read": {
+      "type": "boolean",
+      "default": false
+    },
+    "Appraisal_Detail_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Dashboard_One_View_All": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Dashboard_One_View_Related": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Dashboard_One_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Dashboard_Two_View_All": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Dashboard_Two_View_Related": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Dashboard_Two_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Request_List_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Progress_List_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Appraisal_List_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Request_List_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Request_Detail_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Progress_List_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Progress_Detail_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Appraisal_List_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Appraisal_Detail_Delete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

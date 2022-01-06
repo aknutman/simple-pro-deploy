@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_groups",
+  "info": {
+    "singularName": "user-group",
+    "pluralName": "user-groups",
+    "displayName": "UserGroup"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "GroupNameCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    },
+    "IsArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "GroupName": {
+      "type": "string",
+      "required": true
+    },
+    "user_working_activity_access_matrix": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-working-activity-access-matrix.user-working-activity-access-matrix",
+      "mappedBy": "user_group"
+    },
+    "user_profile_access_matrix": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-profile-access-matrix.user-profile-access-matrix",
+      "mappedBy": "user_group"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "user_group"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests_attachment_types",
+  "info": {
+    "singularName": "requests-attachment-type",
+    "pluralName": "requests-attachment-types",
+    "displayName": "RequestsAttachmentType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AttachmentFile": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "request": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::request.request",
+      "inversedBy": "requests_attachment_types"
+    },
+    "attachment_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::attachment-type.attachment-type"
+    }
+  }
+}

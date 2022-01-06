@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "singularName": "request",
+    "pluralName": "requests",
+    "displayName": "Requests",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RUPCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ProjectName": {
+      "type": "string",
+      "required": true
+    },
+    "ContractStartDate": {
+      "type": "date",
+      "required": true
+    },
+    "HPS": {
+      "type": "biginteger",
+      "required": true
+    },
+    "CeilingValue": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Deleted": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "organization_unit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::organization-unit.organization-unit"
+    },
+    "request_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::request-type.request-type"
+    },
+    "requests_attachment_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::requests-attachment-type.requests-attachment-type",
+      "mappedBy": "request"
+    },
+    "requests_step_progresses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::requests-step-progress.requests-step-progress",
+      "mappedBy": "request"
+    }
+  }
+}

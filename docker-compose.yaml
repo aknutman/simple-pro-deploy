@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+    web:
+        build:
+            context: ./simple-pro-web-v2
+            dockerfile: Dockerfile
+        ports:
+            - 4200:80
+    
+    strapi:
+        build:
+            context: ./simple-pro-strapi-02
+            dockerfile: Dockerfile
+        volumes:
+            - ./app:/srv/app
+        ports:
+            - '1337:1337'
+        depends_on:
+            - postgres
+
+    postgres:
+        image: postgres
+        environment:
+            POSTGRES_DB: simple-pro-strapi-02
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: alohomora
+        volumes:
+            - ./data:/var/lib/postgresql/data
+

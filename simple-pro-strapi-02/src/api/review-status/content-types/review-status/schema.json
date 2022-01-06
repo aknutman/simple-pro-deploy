@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_statuses",
+  "info": {
+    "singularName": "review-status",
+    "pluralName": "review-statuses",
+    "displayName": "ReviewStatus"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StatusName": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "-",
+      "required": true
+    },
+    "ReviewCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "IsArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
