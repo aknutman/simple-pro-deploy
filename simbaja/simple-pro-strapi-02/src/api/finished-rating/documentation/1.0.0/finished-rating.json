@@ -994,6 +994,24 @@
                                                                                                             }
                                                                                                           }
                                                                                                         },
+                                                                                                        "Report_One_Print": {
+                                                                                                          "type": "boolean"
+                                                                                                        },
+                                                                                                        "Report_Two_Print": {
+                                                                                                          "type": "boolean"
+                                                                                                        },
+                                                                                                        "Report_Three_Print": {
+                                                                                                          "type": "boolean"
+                                                                                                        },
+                                                                                                        "Report_One_View": {
+                                                                                                          "type": "boolean"
+                                                                                                        },
+                                                                                                        "Report_Two_View": {
+                                                                                                          "type": "boolean"
+                                                                                                        },
+                                                                                                        "Report_Three_View": {
+                                                                                                          "type": "boolean"
+                                                                                                        },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
                                                                                                           "format": "date-time"
@@ -4430,6 +4448,24 @@
                                                                                                           }
                                                                                                         }
                                                                                                       },
+                                                                                                      "Report_One_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Two_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Three_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_One_View": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Two_View": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Three_View": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",
                                                                                                         "format": "date-time"
@@ -7844,6 +7880,24 @@
                                                                                                           }
                                                                                                         }
                                                                                                       },
+                                                                                                      "Report_One_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Two_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Three_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_One_View": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Two_View": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Three_View": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",
                                                                                                         "format": "date-time"
@@ -11188,6 +11242,24 @@
                                                                                                             }
                                                                                                           }
                                                                                                         }
+                                                                                                      },
+                                                                                                      "Report_One_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Two_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Three_Print": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_One_View": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Two_View": {
+                                                                                                        "type": "boolean"
+                                                                                                      },
+                                                                                                      "Report_Three_View": {
+                                                                                                        "type": "boolean"
                                                                                                       },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",

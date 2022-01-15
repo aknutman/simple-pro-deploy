@@ -152,6 +152,36 @@
       "relation": "oneToOne",
       "target": "api::user-group.user-group",
       "inversedBy": "user_profile_access_matrix"
+    },
+    "Report_One_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Report_Two_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Report_Three_Print": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Report_One_View": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Report_Two_View": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Report_Three_View": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
