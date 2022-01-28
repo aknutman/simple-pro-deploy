@@ -4,7 +4,8 @@
   "info": {
     "singularName": "attachment-type",
     "pluralName": "attachment-types",
-    "displayName": "AttachmentType"
+    "displayName": "AttachmentType",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
