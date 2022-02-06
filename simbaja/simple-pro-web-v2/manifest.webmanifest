@@ -1,7 +1,7 @@
 {
-  "name": "simple-pro-web-v2",
-  "short_name": "simple-pro-web-v2",
-  "theme_color": "#1976d2",
+  "name": "Sistem Manajemen Pengadaan Barang dan Jasa",
+  "short_name": "simbaja",
+  "theme_color": "#3F51B5",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
